@@ -51,31 +51,27 @@ body {
         display: flex;
         flex-direction: row;
         gap: 0.5rem;
-        width: 100%; 
+        width: fit-content;
+        align-items: center;
+        cursor: pointer; 
 
         & label {
             color: #f7931e;
             font-weight: 600;
+
+            & span {
+                background-color: #f7931e;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                color: #fff;
+                font-weight: 600;
+            }
         }
 
         & input {
-            -webkit-appearance: none;
-            appearance: none;
-            background: none;
-            border: none;
-            outline: none;
-            width: 1.5rem;
-            height: 1.5rem;
+            opacity: 0;
             cursor: pointer;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        & input::-webkit-color-swatch {
-            border-radius: 50%;
-            border: 1px solid #000;
+            position: absolute;
         }
     }
 
