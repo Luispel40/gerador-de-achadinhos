@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>gerador de achadinhos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <img class="logo" src="img/logo-GA.svg" alt="logo">
+            <form action>
+                <label for="name">NOME DO GRUPO</label>
+                <input type="text" name="name" id="name"
+                    placeholder="ex: achadinhos da fulana">
+                <label for="buton-name">NOME DO BOTÃO</label>
+                <input type="text" name="buton-name" id="buton-name"
+                    placeholder="ex: Entrar no grupo para economizar" required>
+                <label for="link">LINK DO GRUPO</label>
+                <input type="text" name="link" id="link"
+                    placeholder="https://api.whatsapp.com/nomedoseugrupo" required>
+            </form>
+            <div class="color">
+                <label for="color">COR PRINCIPAL</label>
+                <input type="color" name="color" id="color" value="#f7931e">
+            </div>
+            <button onclick="FormData(event)">confirmar e baixar arquivo</button>
+        </div>
+    </body>
+</html>
